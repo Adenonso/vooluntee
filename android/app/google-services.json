@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "31346964423",
+    "project_id": "vooluntee",
+    "storage_bucket": "vooluntee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31346964423:android:1c0674a01cc21390818be2",
+        "android_client_info": {
+          "package_name": "com.example.vooluntee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUbw9mppHoO_icIo-9rfXcoSWELhRO0KI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
