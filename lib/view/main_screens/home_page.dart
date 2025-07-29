@@ -1,3 +1,6 @@
+//usermail: dan111@gmail.com
+//password: dan111
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:vooluntee/my_widgets/colors.dart';
@@ -59,34 +62,37 @@ class _MyHomePageState extends State<MyHomePage> {
       body: userData != null
           ? Padding(
               padding: const EdgeInsets.symmetric(horizontal: 5.0),
-              child: Stack(children: [
-                Column(
-                  children: [
-                    Text(
-                      'Hi ${userData!['name']}, Welcome to VolunTeam\nYour go to place to find volunteers',
-                      style: GoogleFonts.raleway(fontSize: 15),
-                    ),
+              child: SizedBox(
+                width: double.infinity,
+                child: Stack(children: [
+                  Column(
+                    children: [
+                      Text(
+                        'Hi ${userData!['name']}, Welcome to VolunTeam\nYour go to place to find volunteers',
+                        style: GoogleFonts.raleway(fontSize: 15),
+                      ),
 
-                    //display events
-                  ],
-                ),
-                if (userData!['role'] == 'Organizer')
-                  Positioned(
-                      // right: 15,
-                      // width: 10,
-                      left: 80,
-                      bottom: 10,
-                      child: ElevatedButton.icon(
-                        onPressed: () {
-                          Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => CreateEventPage()));
-                        },
-                        icon: Icon(Icons.add),
-                        label: Text('Create an event'),
-                      ))
-              ]),
+                      //display events
+                    ],
+                  ),
+                  if (userData!['role'] == 'Organizer')
+                    Positioned(
+                        right: 20,
+                        // width: 10,
+                        // left: 80,
+                        bottom: 20,
+                        child: ElevatedButton.icon(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CreateEventPage()));
+                          },
+                          icon: Icon(Icons.add),
+                          label: Text('Create an event'),
+                        ))
+                ]),
+              ),
             )
           : Center(
               child: CircularProgressIndicator(),

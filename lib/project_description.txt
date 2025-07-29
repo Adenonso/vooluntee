@@ -1,0 +1,10 @@
+There are different options to login as, and as an organizer you have exclusively the
+opputunity to create an event.
+
+to login as a 
+organizer: 
+    mail: dan111@gmail.com
+    password: dan111
+volunteer: 
+    mail: dan222@gmail.com
+    password: dan222
